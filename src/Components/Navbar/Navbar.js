@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../images/logo.svg";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -31,6 +32,15 @@ const Navbar = () => {
         >
           Get Started
         </a>
+        {/*Hamburger Icon*/}
+        <button
+          id="menu-btn"
+          className="block hamburger md:hidden focus:outline-none"
+        >
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
+        </button>
       </div>
     </div>
   );
