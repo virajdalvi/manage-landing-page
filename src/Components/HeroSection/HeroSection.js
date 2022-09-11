@@ -2,7 +2,7 @@ import React from "react";
 import heroImage from "../../images/illustration-intro.svg";
 const HeroSection = () => {
   return (
-    <section id="hero" className="font-Vietnam">
+    <section id="hero" className="font-Vietnam" name="home">
       <div className="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-14 space-y-0 md:space-y-0">
         {/*Left item*/}
         <div className="flex flex-col mb-32 space-y-10 md:w-1/2">

@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.svg";
 import "./Navbar.css";
-
+import { Link } from "react-scroll";
 const toggleClass = () => {
   const btn = document.getElementById("menu-btn");
   const nav = document.getElementById("menu");
@@ -19,20 +19,25 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="font-medium hover:text-darkGrayishBlue">
-            Pricing
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="home" spy={true} smooth={true} duration={500}>
+              Home
+            </Link>
           </a>
-          <a href="#" className="font-medium hover:text-darkGrayishBlue">
-            Product
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="features" spy={true} smooth={true} duration={500}>
+              Features
+            </Link>
           </a>
-          <a href="#" className="font-medium hover:text-darkGrayishBlue">
-            About Us
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="testimonials" spy={true} smooth={true} duration={500}>
+              Testimonials
+            </Link>
           </a>
-          <a href="#" className="font-medium hover:text-darkGrayishBlue">
-            Careers
-          </a>
-          <a href="#" className="font-medium hover:text-darkGrayishBlue">
-            Community
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="cta" spy={true} smooth={true} duration={500}>
+              Contact Us
+            </Link>
           </a>
         </div>
         <a
@@ -58,11 +63,26 @@ const Navbar = () => {
           id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <a href="#">Pricing</a>
-          <a href="#">Product</a>
-          <a href="#">About Us</a>
-          <a href="#">Careers</a>
-          <a href="#">Community</a>
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="home" spy={true} smooth={true} duration={500}>
+              Home
+            </Link>
+          </a>
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="features" spy={true} smooth={true} duration={500}>
+              Features
+            </Link>
+          </a>
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="testimonials" spy={true} smooth={true} duration={500}>
+              Testimonials
+            </Link>
+          </a>
+          <a href="" className="font-medium hover:text-darkGrayishBlue">
+            <Link to="cta" spy={true} smooth={true} duration={500}>
+              Contact Us
+            </Link>
+          </a>
         </menu>
       </div>
     </nav>
