@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./CtaSection.css";
 const CtaSection = () => {
   return (
     <section className="font-Vietnam bg-brightRed" id="cta">
