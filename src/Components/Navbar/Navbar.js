@@ -2,9 +2,20 @@ import React from "react";
 import logo from "../../images/logo.svg";
 import "./Navbar.css";
 
+const toggleClass = () => {
+  const btn = document.getElementById("menu-btn");
+  const nav = document.getElementById("menu");
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("open");
+    nav.classList.toggle("flex");
+    nav.classList.toggle("hidden");
+  });
+};
+
 const Navbar = () => {
   return (
-    <div className="realtive container mx-auto p-6 font-Vietnam">
+    <nav className="realtive container mx-auto p-6 font-Vietnam">
       <div className="flex items-center justify-between">
         <div className="pt-2">
           <img src={logo} alt="logo" />
@@ -36,6 +47,7 @@ const Navbar = () => {
         <button
           id="menu-btn"
           className="block hamburger md:hidden focus:outline-none"
+          onClick={toggleClass}
         >
           <span className="hamburger-top"></span>
           <span className="hamburger-middle"></span>
@@ -55,7 +67,7 @@ const Navbar = () => {
           <a href="#">Community</a>
         </menu>
       </div>
-    </div>
+    </nav>
   );
 };
 
