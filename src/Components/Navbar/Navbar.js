@@ -2,14 +2,6 @@ import React from "react";
 import logo from "../../images/logo.svg";
 import "./Navbar.css";
 
-const btn = document.getElementById("menu-btn");
-const nav = document.getElementById("menu");
-
-btn.addEventListener("click", () => {
-  btn.classList.toggle("open");
-  nav.classList.toggle("flex");
-  nav.classList.toggle("hidden");
-});
 const Navbar = () => {
   return (
     <div className="realtive container mx-auto p-6 font-Vietnam">
