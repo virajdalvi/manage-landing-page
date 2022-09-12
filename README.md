@@ -13,5 +13,5 @@ https://managenow.netlify.app/
 ## 3. Mobile View
 
 <p align="center">
-    <img src="src/images/Mobileview.jpg">
+    <img src="src/images/Mobileview.jpg" width="50%">
 </p>
