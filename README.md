@@ -2,6 +2,16 @@
 
 <br>
 
-## 1.Desktop View
+## 1. Website Link
+
+https://managenow.netlify.app/
+
+## 2. Desktop View
 
 <img src="src/images/Desktop_View.png">
+
+## 3. Mobile View
+
+<p align="center">
+    <img src="src/images/Mobileview.jpg">
+</p>
